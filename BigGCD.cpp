@@ -18,7 +18,6 @@ const ll mod = 1e9 + 7;
 const ll inf = 2e9 + 5;
 double PI = 3.14159265358979323846;
 
-ll m = 7;
 
 ll POW(ll a, ll b, ll m) {
 	ll res = 1;
@@ -33,7 +32,7 @@ ll POW(ll a, ll b, ll m) {
 }
 
 ll multiplicativeInverse(ll k){
-	return POW(k, m-2, m);
+	return POW(k, mod-2, mod);
 }
 
 ll gcd(ll a, ll b){
